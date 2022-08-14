@@ -13,7 +13,7 @@
 //
 // --------------------------------------------solution--------------------------------------------------------------------------------------
 
-const friend = friends => friends.filter(friend => friend.length === 4)
+const friend = friends => friends.filter(friend => friend.length === 4);
 
 // 2.
 
@@ -26,4 +26,14 @@ const friend = friends => friends.filter(friend => friend.length === 4)
 
 // --------------------------------------------solution--------------------------------------------------------------------------------------
 
-const maps = x => x.map(e => e*2)
+const maps = x => x.map(e => e*2);
+
+// 3.
+
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+// --------------------------------------------solution--------------------------------------------------------------------------------------
+
+const boolToWord = bool => bool ? 'Yes' : 'No';
+
+
