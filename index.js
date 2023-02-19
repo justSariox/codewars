@@ -134,3 +134,15 @@ const validatePIN = pin => /^(\d{4}|^\d{6})$/.test(pin)
 //         return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
 //     }
 // }
+
+//
+
+// Are they the "same"?
+
+function comp(array1, array2){
+    if (!array1 || array2 || array1.length !== array2.length) {
+        return false;
+    } else {
+        return array1.map(item => item * item).sort().toString() === array2.sort().toString();
+    }
+}
