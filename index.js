@@ -146,3 +146,7 @@ const validatePIN = pin => /^(\d{4}|^\d{6})$/.test(pin)
 //         return array1.map(item => item * item).sort().toString() === array2.sort().toString();
 //     }
 // }
+
+function switchItUp(number){
+    return  ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'][number];
+}
