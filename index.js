@@ -139,10 +139,10 @@ const validatePIN = pin => /^(\d{4}|^\d{6})$/.test(pin)
 
 // Are they the "same"?
 
-function comp(array1, array2){
-    if (!array1 || array2 || array1.length !== array2.length) {
-        return false;
-    } else {
-        return array1.map(item => item * item).sort().toString() === array2.sort().toString();
-    }
-}
+// function comp(array1, array2){
+//     if (!array1 || array2 || array1.length !== array2.length) {
+//         return false;
+//     } else {
+//         return array1.map(item => item * item).sort().toString() === array2.sort().toString();
+//     }
+// }
