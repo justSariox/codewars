@@ -115,6 +115,22 @@ const validatePIN = pin => /^(\d{4}|^\d{6})$/.test(pin)
 //
 
 // Jaden Casing Strings
-String.prototype.toJadenCase = function () {
-    return this.split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ')
-};
+// String.prototype.toJadenCase = function () {
+//     return this.split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ')
+// };
+
+//Who likes it?
+
+// function likes (names) {
+//     if (names.length === 0) {
+//         return 'no one likes this';
+//     } else if (names.length === 1) {
+//         return `${names[0]} likes this`;
+//     } else if (names.length === 2) {
+//         return `${names[0]} and ${names[1]} like this`;
+//     } else if (names.length === 3) {
+//         return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+//     } else if (names.length > 3) {
+//         return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
+//     }
+// }
