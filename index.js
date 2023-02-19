@@ -74,4 +74,40 @@ const validatePIN = pin => /^(\d{4}|^\d{6})$/.test(pin)
 
 // --------------------------------------------solution--------------------------------------------------------------------------------------
 
-const areaOrPerimeter = (l, w) => l === w ? l*w : (l*2)+(w*2)
+// const areaOrPerimeter = (l, w) => l === w ? l*w : (l*2)+(w*2)
+//
+
+// function past(h, m, s){
+//     const result = ((h*3600) + (m*60) + s)*1000
+//     console.log(result)
+// }
+//
+// past(1, 1, 1)
+
+
+// const increment = (number, value) => {
+//     if (!value) {
+//         return number + 1;
+//     } else {
+//         number + value
+//     }
+// };
+//
+
+
+// bubbleSort
+const bubbleSort = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+             if(arr[j+1] < arr[j]) {
+                 let tmp = arr[j]
+                 arr[j] = arr[j+1]
+                 arr[j+1] = tmp;
+             }
+
+        }
+    }
+    return arr
+}
+
+console.log(bubbleSort([6,5,2,22,1,4,7,46]))
