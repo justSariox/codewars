@@ -96,18 +96,25 @@ const validatePIN = pin => /^(\d{4}|^\d{6})$/.test(pin)
 
 
 // bubbleSort
-const bubbleSort = (arr) => {
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length; j++) {
-             if(arr[j+1] < arr[j]) {
-                 let tmp = arr[j]
-                 arr[j] = arr[j+1]
-                 arr[j+1] = tmp;
-             }
+// const bubbleSort = (arr, count) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length; j++) {
+//              if(arr[j+1] < arr[j]) {
+//                  let tmp = arr[j]
+//                  arr[j] = arr[j+1]
+//                  arr[j+1] = tmp;
+//              }
+//
+//         }
+//         count++
+//     }
+//     return arr
+// }
+//
+// console.log(bubbleSort([6,5,2,22,1,4,7,46]))
+//
 
-        }
-    }
-    return arr
-}
-
-console.log(bubbleSort([6,5,2,22,1,4,7,46]))
+// Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+    return this.split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ')
+};
