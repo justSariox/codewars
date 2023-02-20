@@ -64,26 +64,59 @@ const boolToWord = bool => bool ? 'Yes' : 'No';
 
 // Welcome!
 
-function greet(language) {
-    switch(language){
-        case "english": return "Welcome";
-        case "czech": return "Vitejte";
-        case "danish": return "Velkomst";
-        case "dutch": return "Welkom";
-        case "estonian": return "Tere tulemast";
-        case "finnish": return "Tervetuloa";
-        case "flemish": return "Welgekomen";
-        case "french": return "Bienvenue";
-        case "german": return "Willkommen";
-        case "irish": return "Failte";
-        case "italian": return "Benvenuto";
-        case "latvian": return "Gaidits";
-        case "lithuanian": return "Laukiamas";
-        case "polish": return "Witamy";
-        case "spanish": return "Bienvenido";
-        case "swedish": return "Valkommen";
-        case "welsh": return "Croeso";
-        default: return "Welcome";
-    }
+// function greet(language) {
+//     switch(language){
+//         case "english": return "Welcome";
+//         case "czech": return "Vitejte";
+//         case "danish": return "Velkomst";
+//         case "dutch": return "Welkom";
+//         case "estonian": return "Tere tulemast";
+//         case "finnish": return "Tervetuloa";
+//         case "flemish": return "Welgekomen";
+//         case "french": return "Bienvenue";
+//         case "german": return "Willkommen";
+//         case "irish": return "Failte";
+//         case "italian": return "Benvenuto";
+//         case "latvian": return "Gaidits";
+//         case "lithuanian": return "Laukiamas";
+//         case "polish": return "Witamy";
+//         case "spanish": return "Bienvenido";
+//         case "swedish": return "Valkommen";
+//         case "welsh": return "Croeso";
+//         default: return "Welcome";
+//     }
+//
+// }
 
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//         for (let i = 0; i < args.length; i++) {
+//             for (let j = 0; j < args.length; j++) {
+//                 if(args[j+1] < args[j]) {
+//                     let tmp = args[j];
+//                     args[j] = args[j+1]
+//                     args[j+1] = tmp
+//                 }
+//             }
+//         }
+//         console.log(args.at(-1))
+//     }
+//
+// }
+
+// Find the smallest integer in the array
+
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        for (let i = 0; i < args.length; i++) {
+            for (let j = 0; j < args.length; j++) {
+                if(args[j+1] < args[j]) {
+                    let tmp = args[j];
+                    args[j] = args[j+1]
+                    args[j+1] = tmp
+                }
+            }
+        }
+        return args.at(0)
+    }
 }
