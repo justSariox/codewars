@@ -61,3 +61,29 @@ const boolToWord = bool => bool ? 'Yes' : 'No';
 // function switchItUp(number){
 //     return  ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'][number];
 // }
+
+// Welcome!
+
+function greet(language) {
+    switch(language){
+        case "english": return "Welcome";
+        case "czech": return "Vitejte";
+        case "danish": return "Velkomst";
+        case "dutch": return "Welkom";
+        case "estonian": return "Tere tulemast";
+        case "finnish": return "Tervetuloa";
+        case "flemish": return "Welgekomen";
+        case "french": return "Bienvenue";
+        case "german": return "Willkommen";
+        case "irish": return "Failte";
+        case "italian": return "Benvenuto";
+        case "latvian": return "Gaidits";
+        case "lithuanian": return "Laukiamas";
+        case "polish": return "Witamy";
+        case "spanish": return "Bienvenido";
+        case "swedish": return "Valkommen";
+        case "welsh": return "Croeso";
+        default: return "Welcome";
+    }
+
+}
