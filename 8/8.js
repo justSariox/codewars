@@ -120,3 +120,9 @@ class SmallestIntegerFinder {
         return args.at(0)
     }
 }
+
+//
+
+const binaryArrayToNumber = arr => {
+    return parseInt(arr.join(""),2);
+};
